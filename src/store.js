@@ -1,13 +1,16 @@
-import { applyMiddleware, createStore, compose } from 'redux';
-import thunk from 'redux-thunk';
-import reducers from './reducers';
+import { applyMiddleware, combineReducers, createStore, compose } from 'redux';
+import ReduxThunk from 'redux-thunk';
+import trailsReducer from 'reducers/trails';
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
+const reducer = combineReducers({
+  trails: trailsReducer,
+});
 /* eslint-disable no-underscore-dangle */
 const store = createStore(
-  reducers /* preloadedState, */,
-  composeEnhancers(applyMiddleware(thunk))
+  reducer /* preloadedState, */,
+  composeEnhancers(applyMiddleware(ReduxThunk))
 );
 /* eslint-enable */
 
