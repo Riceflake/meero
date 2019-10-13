@@ -1,0 +1,17 @@
+@import "style/_variables.scss";
+
+.header {
+  display: flex;
+  align-items: center;
+
+	height: $header-height;
+	box-shadow: $header-shadow;
+}
+
+.title {
+  margin-left: 80px;
+
+	font-size: $header-font-size;
+	font-weight: $header-font-weight;
+	color: $color-text;
+}

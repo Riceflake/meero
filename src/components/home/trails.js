@@ -5,11 +5,11 @@ import styles from './trails.module.scss';
 
 export default function Trails({ trails }) {
   return (
-    <div className={styles.trails}>
+    <main className={styles.trails}>
       {trails.map(trail => (
         <Trail key={trail.id} src={trail.imgMedium} name={trail.name} />
       ))}
-    </div>
+    </main>
   );
 }
 
