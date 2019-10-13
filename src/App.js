@@ -2,13 +2,14 @@ import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import fetchTrails from 'actions/fetchTrails';
+import Home from 'components/home';
 
 function App({ fetch }) {
   useEffect(() => {
     fetch();
   });
 
-  return <div className="App" />;
+  return <Home />;
 }
 
 App.propTypes = {

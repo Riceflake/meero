@@ -1,0 +1,7 @@
+.trails {
+  padding: 50px 200px;
+  display: grid;
+  grid-template-rows: 330px;
+  grid-template-columns: repeat(3, 470px);
+  grid-gap: 40px 40px;
+}
