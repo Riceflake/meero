@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
-import fetchTrails from 'actions/fetchTrails';
+import fetchTrails from 'actions/trails/fetchTrails';
 import Home from 'components/home';
 
 function App({ fetch }) {

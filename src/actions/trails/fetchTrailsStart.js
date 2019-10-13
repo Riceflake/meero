@@ -1,4 +1,4 @@
-import { FETCH_TRAILS_START } from 'actions';
+import { FETCH_TRAILS_START } from 'actions/trails';
 
 export default function fetchTrailsStart() {
   return {

@@ -1,4 +1,4 @@
-import { FETCH_TRAILS_SUCCESS } from 'actions';
+import { FETCH_TRAILS_SUCCESS } from 'actions/trails';
 
 const initialState = {
   list: [],

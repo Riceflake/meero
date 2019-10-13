@@ -1,6 +1,6 @@
-import fetchTrailsStart from 'actions/fetchTrailsStart';
-import fetchTrailsSuccess from 'actions/fetchTrailsSuccess';
-import fetchTrailsError from 'actions/fetchTrailsError';
+import fetchTrailsStart from 'actions/trails/fetchTrailsStart';
+import fetchTrailsSuccess from 'actions/trails/fetchTrailsSuccess';
+import fetchTrailsError from 'actions/trails/fetchTrailsError';
 import api from 'utils/api';
 
 export default function fetchTrails() {

@@ -1,4 +1,4 @@
-import { FETCH_TRAILS_ERROR } from 'actions';
+import { FETCH_TRAILS_ERROR } from 'actions/trails';
 
 export default function fetchTrailsSuccess(error) {
   return {
