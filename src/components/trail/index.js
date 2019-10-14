@@ -27,5 +27,9 @@ Trail.propTypes = {
     id: PropTypes.number.isRequired,
     name: PropTypes.string.isRequired,
     imgMedium: PropTypes.string.isRequired,
-  }).isRequired,
+  }),
+};
+
+Trail.defaultProps = {
+  trail: undefined,
 };

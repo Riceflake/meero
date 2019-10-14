@@ -1,18 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Trail from 'components/home/trails/trail';
+import Trail from 'containers/home/trails/trail';
 import styles from './index.module.scss';
 
 export default function Trails({ trails }) {
   return (
     <div className={styles.trails}>
       {trails.map(trail => (
-        <Trail
-          key={trail.id}
-          id={trail.id}
-          src={trail.imgMedium}
-          name={trail.name}
-        />
+        <Trail key={trail.id} id={trail.id} />
       ))}
     </div>
   );
