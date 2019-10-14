@@ -6,7 +6,7 @@ import styles from './trail.module.scss';
 
 export default function Trail({ id, url, src, name }) {
   return (
-    <figure>
+    <figure className={styles.figure}>
       <div className={styles.selection}>
         <Link to={url}>
           <img src={src} alt={name} className={styles.thumbnail} />
