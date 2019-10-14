@@ -1,0 +1,18 @@
+@import "style/_variables.scss";
+
+.button {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 35px;
+  left: 85px;
+  height: 40px;
+  width: 6%;
+  border: none;
+  border-radius: 5px;
+  background-color: $color-primary;
+  color: $color-gray-lightest;
+  font-size: $font-size;
+  text-decoration: none;
+}

@@ -21,6 +21,8 @@ $header-font-size: 2rem !default;
 $header-font-weight: $font-bold !default;
 $header-index: 5 !default;
 
+$trail-height: calc(100vh - #{$header-height});
+
 /* HEADINGS */
 $heading-2-font-size: 3em;
 $heading-2-font-size-sm: 2em;
