@@ -9,12 +9,14 @@ import styles from './index.module.scss';
 export default function Filters() {
   return (
     <div className={styles.filters}>
-      <span className={styles.difficulty}>Difficulty : </span>
-      <FilterAll />
-      <FilterBlueBlack />
-      <FilterGreenBlue />
-      <FilterBlue />
-      <FilterBlack />
+      <div>
+        <span className={styles.difficulty}>Difficulty : </span>
+        <FilterAll />
+        <FilterBlueBlack />
+        <FilterGreenBlue />
+        <FilterBlue />
+        <FilterBlack />
+      </div>
     </div>
   );
 }

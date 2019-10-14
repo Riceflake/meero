@@ -1,7 +1,23 @@
+@import "style/_variables.scss";
+
 .trails {
   display: grid;
-  grid-template-rows: 330px;
-  grid-template-columns: repeat(3, 470px);
-  grid-gap: 40px 40px;
-  padding-bottom: 50px;
+  justify-items: center;
+	grid-template-rows: 1fr;
+  grid-template-columns: repeat(3, 1fr);
+	grid-gap: 40px 40px;
+	padding-bottom: 50px;
+}
+
+@media screen and (max-width: $bp-md) {
+	.trails {
+    grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+
+@media screen and (max-width: $bp-sm) {
+	.trails {
+    grid-template-columns: 1fr;
+	}
 }

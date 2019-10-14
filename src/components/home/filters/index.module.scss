@@ -13,3 +13,9 @@
 	color: $color-gray;
 	font-weight: $font-bold;
 }
+
+@media screen and (max-width: $bp-sm) {
+	.filters {
+		text-align: center;
+	}
+}
