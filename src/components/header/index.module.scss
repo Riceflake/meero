@@ -5,27 +5,28 @@
 	align-items: center;
 	height: $header-height;
 	box-shadow: $header-shadow;
-}
 
-.title {
-	margin-left: 5%;
-	font-size: $header-font-size;
-	font-weight: $header-font-weight;
-	color: $color-text;
-}
+	& .title {
+		margin-left: 5%;
+		font-size: $header-font-size;
+		font-weight: $header-font-weight;
+		color: $color-text;
+	}
 
-.selected {
-	display: flex;
-	align-items: center;
-	justify-content: center;
+	& .selected {
+		display: flex;
+		align-items: center;
+		justify-content: center;
 
-	margin-left: auto;
-	margin-right: 5%;
+		margin-left: auto;
+		margin-right: 5%;
 
-	height: 25px;
-	width: 60px;
-	border-radius: 15px;
-	background-color: $color-danger;
-	font-weight: $font-bold;
-	color: $color-gray-lightest;
+		height: 25px;
+		width: 60px;
+		border-radius: 15px;
+		background-color: $color-danger;
+		font-weight: $font-bold;
+		color: $color-gray-lightest;
+	}
+
 }
