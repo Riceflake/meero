@@ -1,19 +1,19 @@
 @import "style/_variables.scss";
 
 .filters {
-	display: flex;
-	padding-bottom: 30px;
+  display: flex;
+  padding-bottom: 30px;
 
-	@media screen and (max-width: $bp-sm) {
-		text-align: center;
-	}
+  @media screen and (max-width: $bp-sm) {
+    text-align: center;
+  }
 
-	& > * + * {
-		margin-left: 15px;
-	}
+  & > * + * {
+    margin-left: 15px;
+  }
 
-	& .difficulty {
-		color: $color-gray;
-		font-weight: $font-bold;
-	}
+  & .difficulty {
+    color: $color-gray;
+    font-weight: $font-bold;
+  }
 }

@@ -1,15 +1,15 @@
 @import "style/_variables.scss";
 
 .checkbox {
-	-webkit-appearance: none;
-	width: 45px;
-	height: 45px;
-	border-radius: 50%;
-	border: 3px solid #ffffff;
-	cursor: pointer;
+  -webkit-appearance: none;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  cursor: pointer;
 
-	&:checked {
-		border-color: $color-primary;
-		background-color: $color-primary;
-	}
+  &:checked {
+    border-color: $color-primary;
+    background-color: $color-primary;
+  }
 }

@@ -1,37 +1,41 @@
 @import "style/_variables.scss";
 
+a {
+  color: #fff;
+}
+
 .trail {
-	position: relative;
-	height: $trail-height;
-	width: 100%;
+  position: relative;
+  height: $trail-height;
+  width: 100%;
 
-	& .img {
-		vertical-align: top;
-		width: 100%;
-		height: 100%;
-	}
+  & .img {
+    vertical-align: top;
+    width: 100%;
+    height: 100%;
+  }
 
-	& .caption {
-		width: 100%;
-		display: flex;
-		align-items: center;
-		justify-content: flex-end;
-		position: absolute;
-		bottom: 40px;
-		right: 50px;
-		color: $color-gray-lightest;
-		font-size: $heading-2-font-size;
+  & .caption {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    position: absolute;
+    bottom: 40px;
+    right: 50px;
+    color: $color-gray-lightest;
+    font-size: $heading-2-font-size;
 
-		@media screen and (max-width: $bp-sm) {
-			& {
-				justify-content: center;
-				font-size: $font-size;
-				right: 0px;
-			}
-		}
+    @media screen and (max-width: $bp-sm) {
+      & {
+        justify-content: center;
+        font-size: $font-size;
+        right: 0;
+      }
+    }
 
-		.checkbox {
-			margin-right: 25px;
-		}
-	}
+    .checkbox {
+      margin-right: 25px;
+    }
+  }
 }

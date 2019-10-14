@@ -1,29 +1,29 @@
 @import "style/_variables.scss";
 
 .figure {
-	width: 100%;
+  width: 100%;
 
-	& .selection {
-		position: relative;
+  & .selection {
+    position: relative;
 
-		& .checkbox {
-			position: absolute;
-			bottom: 20px;
-			right: 20px;
-		}
-	}
+    & .checkbox {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+    }
+  }
 
-	& .caption {
-		text-align: center;
-		color: $color-gray;
-		font-size: larger;
-		font-weight: $font-bold;
-	}
+  & .caption {
+    text-align: center;
+    color: $color-gray;
+    font-size: larger;
+    font-weight: $font-bold;
+  }
 }
 
 .thumbnail {
-	border-radius: 10px;
-	width: 100%;
-	height: 300px;
-	object-fit: cover;
+  border-radius: 10px;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
 }
