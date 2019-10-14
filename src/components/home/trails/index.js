@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Trail from 'containers/home/trails/trail';
+import Trail from 'components/home/trails/trail';
 import styles from './index.module.scss';
 
 export default function Trails({ trails }) {

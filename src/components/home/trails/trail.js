@@ -1,18 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import Checkbox from 'containers/trail/checkbox';
 import styles from './trail.module.scss';
 
-export default function Trail({ src, name, isChecked, onChange }) {
+export default function Trail({ id, src, name }) {
   return (
     <figure>
       <div className={styles.selection}>
         <img src={src} alt={name} className={styles.thumbnail} />
-        <input
-          type="checkbox"
-          checked={isChecked}
-          className={styles.checkbox}
-          onChange={() => onChange()}
-        />
+        <Checkbox id={id} className={styles.checkbox} />
       </div>
       <figcaption className={styles.caption}>{name}</figcaption>
     </figure>
@@ -20,8 +16,7 @@ export default function Trail({ src, name, isChecked, onChange }) {
 }
 
 Trail.propTypes = {
+  id: PropTypes.number.isRequired,
   src: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
-  isChecked: PropTypes.bool.isRequired,
-  onChange: PropTypes.func.isRequired,
 };

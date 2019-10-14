@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import Trail from 'components/home/trails/trail';
+import Checkbox from 'components/common/checkbox';
 import isTrailSelected from 'selectors/trails/isTrailSelected';
 import toggleTrailSelection from 'actions/trails/toggleTrailSelection';
 
@@ -14,4 +14,4 @@ const mapDispatchToProps = (dispatch, { id }) => ({
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(Trail);
+)(Checkbox);

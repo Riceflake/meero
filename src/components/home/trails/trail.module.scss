@@ -8,19 +8,6 @@
 	position: absolute;
 	bottom: 20px;
 	right: 20px;
-
-	-webkit-appearance: none;
-	width: 45px;
-  height: 45px;
-	border-radius: 50%;
-	border: 3px solid #ffffff;
-	cursor: pointer;
-
-  &:checked {
-		border-color: $color-primary;
-		background-color: $color-primary;
-	}
-
 }
 
 .thumbnail {
