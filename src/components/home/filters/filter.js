@@ -16,6 +16,6 @@ export default function Filter({ name, isActive, onClick }) {
 
 Filter.propTypes = {
   name: PropTypes.string.isRequired,
-  isActive: PropTypes.string.isRequired,
+  isActive: PropTypes.bool.isRequired,
   onClick: PropTypes.func.isRequired,
 };

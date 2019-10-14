@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import getFilteredTrails from 'selectors/getFilteredTrails';
+import getFilteredTrails from 'selectors/trails/getFilteredTrails';
 import Trails from 'components/home/trails';
 
 const mapStateToProps = state => ({
