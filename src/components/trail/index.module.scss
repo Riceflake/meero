@@ -11,3 +11,17 @@
 	width: 100%;
 	height: 100%;
 }
+
+.caption {
+	display: flex;
+	align-items: center;
+	position: absolute;
+	bottom: 40px;
+	right: 50px;
+	color: $color-gray-lightest;
+	font-size: $heading-2-font-size;
+}
+
+.checkbox {
+	margin-right: 25px;
+}
