@@ -2,6 +2,7 @@ import {
   FETCH_TRAILS_SUCCESS,
   SELECT_TRAIL,
   DESELECT_TRAIL,
+  RESET_SELECTED_TRAILS,
 } from 'actions/trails';
 
 const initialState = {
@@ -25,6 +26,11 @@ export default function trailReducer(state = initialState, action) {
       return {
         ...state,
         selected: state.selected.filter(id => id !== action.id),
+      };
+    case RESET_SELECTED_TRAILS:
+      return {
+        ...state,
+        selected: initialState.selected,
       };
     default:
       return state;

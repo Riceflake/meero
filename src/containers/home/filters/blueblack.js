@@ -1,8 +1,8 @@
 import { connect } from 'react-redux';
 import Filter from 'components/home/filters/filter';
-import setTrailFilter from 'actions/filters/setTrailFilter';
 import { TRAIL_FILTER_BLUEBLACK } from 'actions/filters';
 import getSelectedFilter from 'selectors/filters/getSelectedFilter';
+import changeTrailFilter from 'actions/filters/changeTrailFilter';
 
 const mapStateToProps = state => ({
   name: TRAIL_FILTER_BLUEBLACK,
@@ -10,7 +10,7 @@ const mapStateToProps = state => ({
 });
 
 const mapDispatchToProps = {
-  onClick: () => setTrailFilter(TRAIL_FILTER_BLUEBLACK),
+  onClick: () => changeTrailFilter(TRAIL_FILTER_BLUEBLACK),
 };
 
 export default connect(

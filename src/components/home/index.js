@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from 'components/home/header';
+import Header from 'containers/home/header';
 import Filters from 'components/home/filters';
 import Trails from 'containers/home/trails';
 import styles from './index.module.scss';

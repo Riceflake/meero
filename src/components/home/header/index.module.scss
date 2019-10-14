@@ -1,17 +1,31 @@
 @import "style/_variables.scss";
 
 .header {
-  display: flex;
-  align-items: center;
-
+	display: flex;
+	align-items: center;
 	height: $header-height;
 	box-shadow: $header-shadow;
 }
 
 .title {
-  margin-left: 80px;
-
+	margin-left: 80px;
 	font-size: $header-font-size;
 	font-weight: $header-font-weight;
 	color: $color-text;
+}
+
+.selected {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	margin-left: auto;
+	margin-right: 80px;
+
+	height: 20px;
+	width: 60px;
+	border-radius: 10px;
+	background-color: $color-danger;
+	font-weight: $font-bold;
+	color: $color-gray-lightest;
 }
