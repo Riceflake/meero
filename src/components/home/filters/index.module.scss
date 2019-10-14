@@ -1,0 +1,15 @@
+@import "style/_variables.scss";
+
+.filters {
+	display: flex;
+	padding-bottom: 30px;
+
+	& > * + * {
+		margin-left: 15px;
+	}
+}
+
+.difficulty {
+	color: $color-gray;
+	font-weight: $font-bold;
+}

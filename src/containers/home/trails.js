@@ -1,9 +1,9 @@
 import { connect } from 'react-redux';
-import getTrails from 'selectors/getTrails';
+import getFilteredTrails from 'selectors/getFilteredTrails';
 import Trails from 'components/home/trails';
 
 const mapStateToProps = state => ({
-  trails: getTrails(state),
+  trails: getFilteredTrails(state),
 });
 
 export default connect(mapStateToProps)(Trails);
