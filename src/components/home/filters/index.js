@@ -11,10 +11,10 @@ export default function Filters() {
     <div className={styles.filters}>
       <span className={styles.difficulty}>Difficulty : </span>
       <FilterAll />
-      <FilterBlack />
-      <FilterBlue />
       <FilterBlueBlack />
       <FilterGreenBlue />
+      <FilterBlue />
+      <FilterBlack />
     </div>
   );
 }

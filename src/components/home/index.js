@@ -9,6 +9,7 @@ export default function Home() {
     <div>
       <Header />
       <div className={styles.home}>
+        <div className={styles.title}>Choose a trail</div>
         <Filters />
         <Trails />
       </div>

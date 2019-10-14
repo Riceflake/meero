@@ -1,3 +1,13 @@
+@import "style/_variables.scss";
+
 .home {
-  padding: 50px 200px;
+  padding: 0 200px;
+}
+
+.title {
+  text-align: center;
+  font-weight: $font-thin;
+  font-size: $heading-2-font-size;
+  color: $color-gray;
+  padding: 50px 0;
 }
