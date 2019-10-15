@@ -4,11 +4,11 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - NodeJS >= 10.16.3 (https://nodejs.org/en/download/)
 - Yarn >= 1.19.1 (https://yarnpkg.com/en/docs/install)
 
-Run `yarn install` to install dependencies.
+## Setup
 
-## Env
-
-Do not working to rename .env.example and replace by your own variables.
+1. Run `yarn install` to install dependencies.
+2. `cp .env.example .env`
+3. Changes variables in the file `.env` by your own one.
 
 ## Available Scripts
 
