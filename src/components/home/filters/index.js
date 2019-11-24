@@ -1,9 +1,12 @@
 import React from 'react';
-import FilterAll from 'containers/home/filters/all';
-import FilterBlack from 'containers/home/filters/black';
-import FilterBlue from 'containers/home/filters/blue';
-import FilterBlueBlack from 'containers/home/filters/blueblack';
-import FilterGreenBlue from 'containers/home/filters/greenblue';
+import {
+  TRAIL_FILTER_ALL,
+  TRAIL_FILTER_BLACK,
+  TRAIL_FILTER_BLUE,
+  TRAIL_FILTER_BLUEBLACK,
+  TRAIL_FILTER_GREENBLUE,
+} from 'actions/filters';
+import Filter from 'containers/home/filters/filter';
 import styles from './index.module.scss';
 
 export default function Filters() {
@@ -11,11 +14,11 @@ export default function Filters() {
     <div className={styles.filters}>
       <div>
         <span className={styles.difficulty}>Difficulty : </span>
-        <FilterAll />
-        <FilterBlueBlack />
-        <FilterGreenBlue />
-        <FilterBlue />
-        <FilterBlack />
+        <Filter filter={TRAIL_FILTER_ALL} />
+        <Filter filter={TRAIL_FILTER_BLUEBLACK} />
+        <Filter filter={TRAIL_FILTER_GREENBLUE} />
+        <Filter filter={TRAIL_FILTER_BLUE} />
+        <Filter filter={TRAIL_FILTER_BLACK} />
       </div>
     </div>
   );
